@@ -1,0 +1,14 @@
+conda activate base
+conda create -n funtools 
+conda activate funtools
+sudo apt-get update
+sudo apt-get install figlet 
+figlet "Olamide"
+conda install bwa 
+conda install blast 
+conda install samtools 
+conda install bedtools 
+conda install spades 
+conda install bcftools 
+conda install fastp 
+conda install multiqc 
