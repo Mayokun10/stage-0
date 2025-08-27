@@ -1,0 +1,18 @@
+echo "Salami Olamide"
+mkdir "Olamide"
+mkdir -p biocomputing && cd biocomputing
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+mv wildtype.fna ../Olamide/
+rm -f wildtype.gbk.1
+grep "tatatata" ../Olamide/wildtype.fna
+grep "tatatata" ../Olamide/wildtype.fna > ../Olamide/mutant_sequences.txt
+grep -v "^>" wildtype.gbk | wc -l
+grep "LOCUS" wildtype.gbk
+grep "SOURCE" wildtype.gbk
+grep "/gene=" wildtype.gbk
+clear
+history | tail -n 20
+ls ../Olamide
+ls
